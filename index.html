@@ -131,6 +131,67 @@
         <section id="order"></section>
                     <h2 class="laser_title">Create your .série</h2>
 
+
+    <div class="orderwrapper">
+        <form id="orderform" type="POST" enctype=”multipart/form-data” name=”Ordercustomform” onsubmit="return false">
+            <section id="order-section1">
+                <h1 class="formh1">Why not your own design?</h1>
+
+                <p>What are you looking for?</p>
+                <div class="radio-container">
+                    <input class="radio" type="radio" name="involved" value="yes">
+                    <label for="yes">One item</label>
+                    <input class="radio" type="radio" name="involved" value="no">
+                    <label for="no">Multiple items</label>
+                </div>
+                <p>Would you like to be involved in designing this product</p>
+                <div class="radio-container">
+                    <input class="radio" type="radio" name="involved" value="yes">
+                    <label for="yes">Yes</label>
+                    <input class="radio" type="radio" name="involved" value="no">
+                    <label for="no">No</label>
+                </div>
+                <button class="order-button" type="button" id="order-next1">Next</button>
+            </section>
+
+            <section id="order-section2">
+                <h1>Why not your own design?</h1>
+
+                <h2>Write more information about your product</h2>
+
+                <textarea class="order-text-input-big" type="text" name="whatlooking"></textarea>
+
+                <button class="order-button" type="button" id="order-next2">Next</button>
+            </section>
+
+            <section id="order-section3">
+                <h1>Why not your own design?</h1>
+
+                <h2>Please give some contact information</h2>
+
+                <div class="fname-lname-div">
+                    <label for="first-name">First name</label>
+                    <input class="order-text-input" type="text" name="first-name" id="firstname">
+                    <label for="last-name">Last name</label>
+                    <input class="order-text-input" type="text" name="last-name">
+                </div>
+                <div class="fname-lname-div">
+                    <label for="email">Email</label>
+                    <input class="order-text-input" type="text" name="email">
+                </div>
+                <input class="order-button" type="submit" id="order-submit">
+            </section>
+
+            <section id="order-section4">
+                <h1>All done!</h1>
+                <h2>An email has been sent to the artist</h2>
+                <a href="index.html">
+                <button class="order-button" type="button" id="order-next2">Go back</button></a>
+            </section>
+        </form>
+    </div>
+
+
         <section id="about">
             <h2>About Us</h2>
 
