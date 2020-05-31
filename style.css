@@ -313,3 +313,159 @@ body{
 .flex_div{
 	width: 40%;
 }
+
+/*ORDER*/
+
+#order-section1{
+    height: 35vh;
+    position:relative;
+}
+
+#order-section1>h1{
+    margin-bottom: 50px;
+    font-size: 40px;
+}
+
+#order-section1>h2{
+    margin-bottom: 50px;
+    font-size: 25px;
+}
+
+#order-section2>h1{
+    margin-bottom: 50px;
+    font-size: 40px;
+}
+
+#order-section2>h2{
+    margin-bottom: 30px;
+    font-size: 25px;
+}
+
+#order-section2{
+    display: none;
+    height: 35vh;
+    position:relative;
+}
+
+#order-section3{
+    display: none;
+    height: 35vh;
+    position:relative;
+}
+
+#order-section3>h1{
+    margin-bottom: 50px;
+    font-size: 40px;
+}
+
+#order-section3>h2{
+    font-size: 25px;
+}
+
+#order-section4{
+    display: none;
+}
+
+#order-section4>h1{
+    margin-bottom: 50px;
+    font-size: 40px;
+}
+
+.orderwrapper{
+    margin-top: 20vh;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50vw;
+    height: 30vh;
+}
+
+.ordernav{
+    height: 7rem;
+    width: 1.5rem;
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    border: 3px solid;
+    border-color: #273440;
+}
+
+.orderlogo{
+    width: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.order-text-input{
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid;
+}
+
+.order-text-input-big{
+    background: transparent;
+    border: none;
+    width: 60%;
+    height: 50px;
+    border-bottom: 1px solid;
+}
+
+.radio-container input{
+    opacity: 0;
+    position: absolute;
+    width: 170px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.radio-container {
+    padding: 10px;
+}
+
+.radio-container input:hover {
+    background:#DDD;
+}
+
+.radio-container label {
+    padding:5px 70px;
+    cursor:pointer;
+    -webkit-appearance: button;
+    /* WebKit */
+    -moz-appearance: button;
+    /* Mozilla */
+    -o-appearance: button;
+    /* Opera */
+    -ms-appearance: button;
+    /* Internet Explorer */
+    appearance: button;
+    border-bottom: 1px solid;
+    /* CSS3 */
+}
+.radio-container label:hover {
+    background:#DDD;
+}
+
+.order-button {
+	background-color:#273440;
+	border-radius:5px;
+	border:1px solid #273440;
+	display:block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:10px 65px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+    position:absolute;
+    bottom: 0;
+    right: 0;
+}
+.order-button:hover {
+	background-color:#295660;
+}
+
+.fname-lname-div{
+    padding-top: 20px;
+}
