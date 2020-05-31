@@ -80,6 +80,8 @@ nav {
     grid-area: nav;
     background: #e6e6e6;
     padding-top: 20px;
+    position: fixed;
+    bottom: 20px;
 }
 
 .philosophy {
