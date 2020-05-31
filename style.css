@@ -316,9 +316,43 @@ body{
 
 /*ORDER*/
 
-#order-section1{
+.order{
+    display: flex;
+}
+
+.aside{
+    width: 50px;
+}
+
+.orderwrapper{
+    width: 50vw;
+    height: 35vh;
+    margin-left: 20%;
+    margin-top: 5%;
+}
+
+#order-section0{
     height: 35vh;
     position:relative;
+    background: #d0d0d0;
+    padding: 10px;
+}
+
+#order-section0>h1{
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+#order-section0>h2{
+    font-size: 20px;
+}
+
+#order-section1{
+    display: none;
+    height: 35vh;
+    position:relative;
+    background: #d0d0d0;
+    padding: 10px;
 }
 
 #order-section1>h1{
@@ -345,12 +379,16 @@ body{
     display: none;
     height: 35vh;
     position:relative;
+    background: #d0d0d0;
+    padding: 10px;
 }
 
 #order-section3{
     display: none;
     height: 35vh;
     position:relative;
+    background: #d0d0d0;
+    padding: 10px;
 }
 
 #order-section3>h1{
@@ -364,6 +402,13 @@ body{
 
 #order-section4{
     display: none;
+    height:35vh;
+    position: relative;
+}
+
+#order-section4{
+    background: #d0d0d0;
+    padding: 10px;
 }
 
 #order-section4>h1{
@@ -371,20 +416,11 @@ body{
     font-size: 40px;
 }
 
-.orderwrapper{
-    margin-top: 20vh;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50vw;
-    height: 30vh;
-}
-
 .ordernav{
     height: 7rem;
     width: 1.5rem;
     margin: 10px;
-    margin-left: auto;
-    margin-right: auto;
+
     border-radius: 10px;
     border: 3px solid;
     border-color: #273440;
@@ -459,10 +495,39 @@ body{
 	text-decoration:none;
 	text-shadow:0px 1px 0px #2f6627;
     position:absolute;
-    bottom: 0;
-    right: 0;
+    bottom: 10px;
+    right: 10px;
 }
+
 .order-button:hover {
+	background-color:#295660;
+}
+
+.order-types-div{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: flex-start;
+
+}
+
+.order-button-type{
+    background-color:#273440;
+	border-radius:5px;
+	border:1px solid #273440;
+	display:block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:15px 65px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+    margin: 10px;
+}
+
+.order-button-type:hover {
 	background-color:#295660;
 }
 

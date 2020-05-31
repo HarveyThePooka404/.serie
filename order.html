@@ -19,7 +19,7 @@
     </nav>
 
     <div class="orderwrapper">
-        <form id="orderform" type="POST" enctype=”multipart/form-data” name=”Ordercustomform”>
+        <form id="orderform" type="POST" enctype=”multipart/form-data” name=”Ordercustomform” onsubmit="return false">
             <section id="order-section1">
                 <h1 class="formh1">Why not your own design?</h1>
 
@@ -67,12 +67,14 @@
                 </div>
                 <input class="order-button" type="submit" id="order-submit">
             </section>
-        </form>
 
             <section id="order-section4">
                 <h1>All done!</h1>
                 <h2>An email has been sent to the artist</h2>
+                <a href="index.html">
+                <button class="order-button" type="button" id="order-next2">Go back</button></a>
             </section>
+        </form>
     </div>
 
     <script src="order.js"></script>
