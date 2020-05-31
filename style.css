@@ -472,6 +472,235 @@ button {
 
 /* ------------------------------------ END of About US  ---------------------------------*/
 
+/* ------------------------------------ Styling for order  ---------------------------------*/
+/* ------------------------------------ Styling for order  ---------------------------------*/
+/* ------------------------------------ Styling for order  ---------------------------------*/
+
+/*ORDER*/
+
+.order{
+    display: flex;
+}
+
+.aside{
+    width: 50px;
+}
+
+.orderwrapper{
+    width: 50vw;
+    height: 35vh;
+    margin-left: 20%;
+    margin-top: 5%;
+}
+
+#order-section0{
+    height: 35vh;
+    position:relative;
+    background: #d0d0d0;
+    padding: 10px;
+}
+
+#order-section0>h1{
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+#order-section0>h2{
+    font-size: 20px;
+}
+
+#order-section1{
+    display: none;
+    height: 35vh;
+    position:relative;
+    background: #d0d0d0;
+    padding: 10px;
+}
+
+#order-section1>h1{
+    margin-bottom: 50px;
+    font-size: 40px;
+}
+
+#order-section1>h2{
+    margin-bottom: 50px;
+    font-size: 25px;
+}
+
+#order-section2>h1{
+    margin-bottom: 50px;
+    font-size: 40px;
+}
+
+#order-section2>h2{
+    margin-bottom: 30px;
+    font-size: 25px;
+}
+
+#order-section2{
+    display: none;
+    height: 35vh;
+    position:relative;
+    background: #d0d0d0;
+    padding: 10px;
+}
+
+#order-section3{
+    display: none;
+    height: 35vh;
+    position:relative;
+    background: #d0d0d0;
+    padding: 10px;
+}
+
+#order-section3>h1{
+    margin-bottom: 50px;
+    font-size: 40px;
+}
+
+#order-section3>h2{
+    font-size: 25px;
+}
+
+#order-section4{
+    display: none;
+    height:35vh;
+    position: relative;
+}
+
+#order-section4{
+    background: #d0d0d0;
+    padding: 10px;
+}
+
+#order-section4>h1{
+    margin-bottom: 50px;
+    font-size: 40px;
+}
+
+.ordernav{
+    height: 7rem;
+    width: 1.5rem;
+    margin: 10px;
+
+    border-radius: 10px;
+    border: 3px solid;
+    border-color: #273440;
+}
+
+.orderlogo{
+    width: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.order-text-input{
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid;
+}
+
+.order-text-input-big{
+    background: transparent;
+    border: none;
+    width: 60%;
+    height: 50px;
+    border-bottom: 1px solid;
+}
+
+.radio-container input{
+    opacity: 0;
+    position: absolute;
+    width: 170px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.radio-container {
+    padding: 10px;
+}
+
+.radio-container input:hover {
+    background:#DDD;
+}
+
+.radio-container label {
+    padding:5px 70px;
+    cursor:pointer;
+    -webkit-appearance: button;
+    /* WebKit */
+    -moz-appearance: button;
+    /* Mozilla */
+    -o-appearance: button;
+    /* Opera */
+    -ms-appearance: button;
+    /* Internet Explorer */
+    appearance: button;
+    border-bottom: 1px solid;
+    /* CSS3 */
+}
+.radio-container label:hover {
+    background:#DDD;
+}
+
+.order-button {
+	background-color:#273440;
+	border-radius:5px;
+	border:1px solid #273440;
+	display:block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:10px 65px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+    position:absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.order-button:hover {
+	background-color:#295660;
+}
+
+.order-types-div{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: flex-start;
+
+}
+
+.order-button-type{
+    background-color:#273440;
+	border-radius:5px;
+	border:1px solid #273440;
+	display:block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:15px 65px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+    margin: 10px;
+}
+
+.order-button-type:hover {
+	background-color:#295660;
+}
+
+.fname-lname-div{
+    padding-top: 20px;
+}
+
+
+/* ------------------------------------ End of Order --------------------------------*/
+
+
 /* ------------------------------------ Styling for the footer --------------------------------*/
 /* ------------------------------------ Styling for the footer --------------------------------*/
 /* ------------------------------------ Styling for the footer --------------------------------*/
