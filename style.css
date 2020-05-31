@@ -319,11 +319,11 @@ button {
     margin-top: 50px;
 }
 
-/* --------------------------------------- END of Philosophy section ---------------------------------*/
+/* -------------------------------- END of Philosophy section ---------------------------------*/
 
-/* --------------------------------------- Styling for the section Past Projects ---------------------*/
-/* --------------------------------------- Styling for the section Past Projects ---------------------*/
-/* --------------------------------------- Styling for the section Past Projects ---------------------*/
+/* -------------------------------- Styling for the section Past Projects ---------------------*/
+/* -------------------------------- Styling for the section Past Projects ---------------------*/
+/* -------------------------------- Styling for the section Past Projects ---------------------*/
 
 .wrapper_pp {
     display: grid;
@@ -447,11 +447,11 @@ button {
     display: block;
 }
 
-/* --------------------------------------- END of Past projects ---------------------------------*/
+/* ------------------------------------ END of Past projects ---------------------------------*/
 
-/* --------------------------------------- Styling for the section Abouts us ---------------------*/
-/* --------------------------------------- Styling for the section Abouts us ---------------------*/
-/* --------------------------------------- Styling for the section Abouts us ---------------------*/
+/* ------------------------------------ Styling for the section Abouts us ---------------------*/
+/* ------------------------------------ Styling for the section Abouts us ---------------------*/
+/* ----------------------------------- Styling for the section Abouts us ---------------------*/
 
 
 
@@ -473,4 +473,20 @@ button {
     font-size: 0.8em;
     text-align: justify;
     padding: 20px;
+}
+
+/* ------------------------------------ END of About US  ---------------------------------*/
+
+/* ------------------------------------ Styling for the footer --------------------------------*/
+/* ------------------------------------ Styling for the footer --------------------------------*/
+/* ------------------------------------ Styling for the footer --------------------------------*/
+
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.wrapper_some {
+    grid-column: 1;
 }
