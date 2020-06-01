@@ -3,6 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta name="description" content=".Série">
+	<!-- <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> -->
+	<!-- add description -->
 	<link rel="stylesheet" href="style.css">
 	<script src="jquery-3.5.1.min.js"></script>
 	<title>.Série</title>
@@ -203,15 +206,14 @@
 							<button type="button" id="one" onclick="getAmount(this.id)">One item</button>
 							<button type="button" id="more" onclick="getAmount(this.id)">Multiple items</button>
 						</div>
-						
+
 						<h4>Would you like to be involved in the designing of the product</h4>
 						<div class="flex_div">
-							<button type="button" id="one" onclick="getAmount(this.id)">One item</button>
-							<button type="button" id="more" onclick="getAmount(this.id)">Multiple items</button>
-							<!-- <input type="text" class="text border bottom" id="amount_text" placeholder="Please enter the amount"> -->
-							<!-- <button>Next</button> -->
+							<button type="button" id="no" onclick="timeAmount(this.id)">No</button>
+							<button type="button" id="yes" onclick="timeAmount(this.id)">Yes</button>
+							<input type="text" class="text border bottom" id="amount_time" placeholder="How much time are you willing to put into this">
 						</div>
-						<!-- scale from 1->10 -->
+						<button type="button" onclick="getStep2()">Next</button>
 					</div>
 				</div>
 			</div>
@@ -230,10 +232,13 @@
 						<h3>Some last details....</h3>
 						<h4>Tell us more about you need</h4>
 						<div class="flex_div">
-							<button>I'm looking for a personal item of a gift</button>
-							<button>I'm looking for someone to collaborate with</button>
-							<button>I need a personalized item/accessory for my staff</button>
+							<div class="border sides">
+								<textarea class="description" name="description" id="" cols="30" rows="10" placeholder="I had this idea of..."></textarea>
+							</div>
+							<h4>Feel free to upload a photo</h4>
+							<a href="#"><img src="img/icons/photo.svg" alt=""></a>
 						</div>
+						<button type="button" onclick="getStep3()">Next</button>
 					</div>
 				</div>
 			</div>
@@ -249,13 +254,41 @@
 						</div>
 					</div>
 					<div class="form">
-						<h3>Let us contact you</h3>
-						<h4>Please give us some contact information</h4>
+						<h3>Why not your own design?</h3>
+						<h4>Please give us your contact information</h4>
 						<div class="flex_div">
+							<div>
+								<input class="text border bottom" type="text" placeholder="First Name">
+								<input class="text border bottom" type="text" placeholder="Second Name">
+							</div>
+							<input class="text border bottom" type="text" placeholder="Email">
+
+
+							<input type="text" class="text border bottom" id="amount_time" placeholder="How much time are you willing to put into this">
+						</div>
+						<button type="button" onclick="getStep4()">Next</button>
+					</div>
+				</div>
+			</div>
+			<div class="border bl-tr" id="step5">
+				<div>
+					<div class="progress_bar center">
+						<img src="img/logo/logo_blue.svg" alt="">
+						<div>
+							<a href="javascript:prevStep(1)"><div class="center progress progress1 active"></div></a>
+							<a href="javascript:prevStep(2)"><div class="center progress progress1 active"></div></a>
+							<a href="javascript:prevStep(3)"><div class="center progress progress1 active"></div></a>
+							<a href="javascript:prevStep(4)"><div class="center progress progress4 active"></div></a>
+						</div>
+					</div>
+					<div class="form">
+						<h3>Thanks!</h3>
+						<h4>We'll contact you soon!</h4>
+						<!-- <div class="flex_div">
 							<button>I'm looking for a personal item of a gift</button>
 							<button>I'm looking for someone to collaborate with</button>
 							<button>I need a personalized item/accessory for my staff</button>
-						</div>
+						</div> -->
 					</div>
 				</div>
 			</div>

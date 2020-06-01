@@ -70,7 +70,32 @@
 	background-repeat: no-repeat;
 	background-size: 100% 5px;
 }
-
+.border.sides {
+	background:
+	    linear-gradient(to right, #3C4853 2px, transparent 2px) 0 100%,
+	    linear-gradient(to left, #3C4853 2px, transparent 2px) 100% 0,
+	    linear-gradient(to bottom, #3C4853 2px, transparent 2px) 100% 0,
+	    linear-gradient(to top, #3C4853 2px, transparent 2px) 0 100%,
+	    linear-gradient(to right, #3C4853 2px, transparent 2px) 0 0,
+	    linear-gradient(to left, #3C4853 2px, transparent 2px) 100% 100%,
+	    linear-gradient(to bottom, #3C4853 2px, transparent 2px) 0 0,
+	    linear-gradient(to top, #3C4853 2px, transparent 2px) 100% 100%;
+	background-repeat: no-repeat;
+	background-size: 5px 100%;
+}
+.border.sides:focus {
+	background:
+	    /*linear-gradient(to right, #BF9C88 2px, transparent 2px) 0 100%,*/
+	    linear-gradient(to left, #BF9C88 2px, transparent 2px) 100% 0,
+	    linear-gradient(to bottom, #BF9C88 2px, transparent 2px) 100% 0,
+	    /*linear-gradient(to top, #BF9C88 2px, transparent 2px) 0 100%,*/
+	    linear-gradient(to right, #BF9C88 2px, transparent 2px) 0 0,
+	    /*linear-gradient(to left, #BF9C88 2px, transparent 2px) 100% 100%,*/
+	    linear-gradient(to bottom, #BF9C88 2px, transparent 2px) 0 0,
+	    /*linear-gradient(to top, #BF9C88 2px, transparent 2px) 100% 100%;*/
+	background-repeat: no-repeat;
+	background-size: 5px 100%;
+}
 
 
 /*typography*/
@@ -725,9 +750,61 @@ button:focus{
 	padding-left: 15px;
 	padding-right: 15px;
 }
-#step1,#step2,#step3,#step4{
+.form_button.active{
+	background: #BF9C88;
+}
+#amount_time{
+	display: none;
+	margin-left: 10px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+
+#step3>div>.form>.flex_div{
+	/*justify-content: flex-start;*/
+	flex-direction: column;
+}
+#step3>div>.form>.flex_div>div>textarea{
+	resize: none;
+	width: 100%;
+	border:0px;
+	background: #E2E2E2;
+	/*margin: 0px 5px;*/
+}
+#step3>div>.form>.flex_div>div>textarea:focus{
+	outline: none;
+}
+
+#step3>div>.form>.flex_div>div{
+	width: 70%;
+	padding: 5px;
+}
+#step3>div>.form>.flex_div>a>img{
+	width: 75px;
+}
+#step1,#step2,#step3,#step4,#step5{
 	display: none;
 }
-#step1{
+#step4{
 	display: block;
 }
+
+#step4>div>.form>.flex_div{
+	flex-direction: column;
+	width: 60%;
+}
+#step4>div>.form>.flex_div>div{
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	margin-bottom: 20px
+}
+#step4>div>.form>.flex_div>div>input{
+	width: 45%;
+}
+
+
+
+
+
