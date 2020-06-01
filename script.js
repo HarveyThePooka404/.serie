@@ -41,7 +41,7 @@ function allInView() {
     	$(".menu_item_a").removeClass("bl-tr");
     }
 
-    if (isScrolledIntoView($(".project_act"))){
+    if (isScrolledIntoView($("#pp"))){
     	$(".menu_item_o").removeClass("border");
     	$(".menu_item_o").removeClass("bl-tr");
     	$(".menu_item_a").removeClass("border");
@@ -49,14 +49,14 @@ function allInView() {
     	$(".menu_item_p").addClass("border bl-tr active");
     }
 
-    if (isScrolledIntoView($(".order_act"))){
+    if (isScrolledIntoView($("#order"))){
     	$(".menu_item_p").removeClass("border");
     	$(".menu_item_p").removeClass("bl-tr");
     	$(".menu_item_a").removeClass("border");
     	$(".menu_item_a").removeClass("bl-tr");
     	$(".menu_item_o").addClass("border bl-tr active");
     }
-    if (isScrolledIntoView($(".about_act"))){
+    if (isScrolledIntoView($("#about"))){
     	$(".menu_item_p").removeClass("border");
     	$(".menu_item_p").removeClass("bl-tr");
     	$(".menu_item_o").removeClass("border");
