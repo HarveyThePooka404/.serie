@@ -771,7 +771,7 @@ footer {
 
 
 #module_container{
-	display: none;
+	display: block;
 	position: fixed;
 	z-index: 3;
 	height: 100vh;
