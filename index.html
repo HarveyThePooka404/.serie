@@ -172,9 +172,9 @@
 						<h3>Bring your design to life!</h3>
 						<h4>Tell us more about yourself.</h4>
 						<div class="flex_div">
-							<button>I'm looking for a personal item of a gift</button>
-							<button>I'm looking for someone to collaborate with</button>
-							<button>I need a personalized item/accessory for my staff</button>
+							<button id="personal" type="button" onclick="getStep1(this.id)">I'm looking for a personal item of a gift</button>
+							<button id="colab" type="button" onclick="getStep1(this.id)">I'm looking for someone to collaborate with</button>
+							<button id="company" type="button" onclick="getStep1(this.id)">I need a personalized item/accessory for my staff</button>
 						</div>
 					</div>
 				</div>
@@ -184,7 +184,7 @@
 					<div class="progress_bar center">
 						<img src="img/logo/logo_blue.svg" alt="">
 						<div>
-							<div class="center progress progress1 active"></div>
+							<a href="javascript:prevStep(1)"><div class="center progress progress1 active"></div></a>
 							<div class="center progress progress2 active"></div>
 							<div class="center progress progress3"></div>
 							<div class="center progress progress4"></div>
@@ -194,17 +194,24 @@
 						<h3>Tell us some more</h3>
 						<h4>What are you looking for?</h4>
 
-
-						<input class="radio" type="radio" name="involved" value="yes">
-	                    <label for="yes">One item</label>
-	                    <input class="radio" type="radio" name="involved" value="no">
-	                    <label for="no">Multiple items</label>
+						<!-- <input type="radio" class="radio">
+						<span>asd</span>
+						<input type="radio" class="radio">
+						<span>asd</span> -->
 
 						<div class="flex_div">
-							<button>I'm looking for a personal item of a gift</button>
-							<button>I'm looking for someone to collaborate with</button>
-							<button>I need a personalized item/accessory for my staff</button>
+							<button type="button" id="one" onclick="getAmount(this.id)">One item</button>
+							<button type="button" id="more" onclick="getAmount(this.id)">Multiple items</button>
 						</div>
+						
+						<h4>Would you like to be involved in the designing of the product</h4>
+						<div class="flex_div">
+							<button type="button" id="one" onclick="getAmount(this.id)">One item</button>
+							<button type="button" id="more" onclick="getAmount(this.id)">Multiple items</button>
+							<!-- <input type="text" class="text border bottom" id="amount_text" placeholder="Please enter the amount"> -->
+							<!-- <button>Next</button> -->
+						</div>
+						<!-- scale from 1->10 -->
 					</div>
 				</div>
 			</div>
@@ -213,8 +220,8 @@
 					<div class="progress_bar center">
 						<img src="img/logo/logo_blue.svg" alt="">
 						<div>
-							<div class="center progress progress1 active"></div>
-							<div class="center progress progress2 active"></div>
+							<a href="javascript:prevStep(1)"><div class="center progress progress1 active"></div></a>
+							<a href="javascript:prevStep(2)"><div class="center progress progress1 active"></div></a>
 							<div class="center progress progress3 active"></div>
 							<div class="center progress progress4"></div>
 						</div>
@@ -235,9 +242,9 @@
 					<div class="progress_bar center">
 						<img src="img/logo/logo_blue.svg" alt="">
 						<div>
-							<div class="center progress progress1 active"></div>
-							<div class="center progress progress2 active"></div>
-							<div class="center progress progress3 active"></div>
+							<a href="javascript:prevStep(1)"><div class="center progress progress1 active"></div></a>
+							<a href="javascript:prevStep(2)"><div class="center progress progress1 active"></div></a>
+							<a href="javascript:prevStep(3)"><div class="center progress progress1 active"></div></a>
 							<div class="center progress progress4 active"></div>
 						</div>
 					</div>
@@ -287,6 +294,7 @@
 	</footer>
 	</div>
 	<script src="script.js"></script>
+	<script src="order.js"></script>
 </body>
 </html>
 
