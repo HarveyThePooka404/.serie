@@ -54,7 +54,15 @@
     text-align: justify;
 }
 
-
+.border.bl-tr.active{
+	animation: popUp 0.3s ease-in-out;
+		font-size: 110%;
+}
+@keyframes popUp{
+	to{
+		font-size: 110%;
+	}
+}
 
 
 /*typography*/
