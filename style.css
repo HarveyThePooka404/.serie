@@ -142,7 +142,7 @@ main {
     margin: 10px 20px;
 }
 
-nav > img {
+.logo {
     min-width: 75px;
     max-width: 100%;
 }
