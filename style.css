@@ -417,53 +417,6 @@ button {
     transform:translateX(-100px) translateY(5px);
 }
 
-.modal {
-    display: none;
-    /* Hidden by default */
-    position: fixed;
-    /* Stay in place */
-    z-index: 4;
-    /* Sit on top */
-    padding-top: 4vh;
-    /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%;
-    /* Full width */
-    height: 100%;
-    /* Full height */
-    background-color: rgb(0, 0, 0);
-    /* Fallback color */
-    background-color: rgba(0, 0, 0, 0.6);
-    /* Black w/ opacity */
-}
-
-.modal-content {
-    margin: auto;
-    border: 1px solid #888;
-    width: 80%;
-    height: 80vh;
-    background: #e6e6e6;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-
-}
-
-.modal-content img {
-    height: 80%;
-    padding: 20px;
-    align-self: center;
-}
-
-.modal-content img:hover {
-    filter: sepia(70%);
-}
-
-.appear {
-    display: block;
-}
-
 /* ------------------------------------ END of Past projects ---------------------------------*/
 
 /* ------------------------------------ Styling for the section Abouts us ---------------------*/
@@ -770,22 +723,24 @@ footer {
 /* ------------------------------------ New Modal --------------------------------*/
 
 
-#module_container{
-	display: block;
-	position: fixed;
+.module_container{
+	display: none;
+    position:fixed;
+    top:0;
+    left:0;
 	z-index: 3;
 	height: 100vh;
 	width: 100vw;
-	padding: 10%;
+	padding: 5%;
 	background: rgba(7, 2, 13, 0.3);
 
 }
-#module_container > div> div{
+.module_container > div> div{
 	width: 100%;
 	height: 100%;
 	background: #E6E6E6;
 }
-#module_container > div{
+.module_container > div{
 	width: 100%;
 	height: 100%;
 }
@@ -873,6 +828,10 @@ footer {
 }
 .overlay p{
 	width: 80%;
+}
+
+.appear {
+    display: block;
 }
 
 /* ------------------------------------ end of New Modal --------------------------------*/

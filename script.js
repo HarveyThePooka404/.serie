@@ -2,21 +2,6 @@ $(window).on("load", function(){
 	$(".loader-wrap").fadeOut("slow");
 })
 
-
-$(document).click(function(event) {
-  $target = $(event.target);
-  if(!$target.closest('#project_module').length &&
-  $('#module_container').is(":visible")) {
-    $('#module_container').hide();
-  }
-});
-
-function showProjectModule(){
-	document.getElementById("module_container").style.display="block";
-}
-
-
-
 $(allInView);
 $(window).scroll(allInView);
 var lastMenuActive="home";
