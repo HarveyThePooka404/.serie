@@ -5,19 +5,19 @@ function startOrder(type) {
     if (type == "personal") {
         orderNav[0].style.backgroundColor = "#273440";
         document.getElementById("order-section0").style.display = "none";
-        document.getElementById("order-section1").style.display = "block";
+        document.getElementById("order-section1").style.display = "flex";
     } else if (type == "collab") {
         orderNav[0].style.backgroundColor = "#273440";
         document.getElementById("order-section0").style.display = "none";
-        document.getElementById("order-section1").style.display = "block";
+        document.getElementById("order-section1").style.display = "flex";
     } else if (type == "staff") {
         orderNav[0].style.backgroundColor = "#273440";
         document.getElementById("order-section0").style.display = "none";
-        document.getElementById("order-section1").style.display = "block";
+        document.getElementById("order-section1").style.display = "flex";
     } else if (type == "other") {
         orderNav[0].style.backgroundColor = "#273440";
         document.getElementById("order-section0").style.display = "none";
-        document.getElementById("order-section1").style.display = "block";
+        document.getElementById("order-section1").style.display = "flex";
     }
 }
 
@@ -30,7 +30,7 @@ document.getElementById("order-next1").addEventListener("click", function () {
 
 document.getElementById("order-next2").addEventListener("click", function () {
     document.getElementById("order-section2").style.display = "none";
-    document.getElementById("order-section3").style.display = "block";
+    document.getElementById("order-section3").style.display = "flex";
     orderNav[2].style.backgroundColor = "#273440";
 })
 

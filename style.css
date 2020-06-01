@@ -38,7 +38,7 @@
         linear-gradient(to top, #EE302D 2px, transparent 2px) 0 100%;
     background-repeat: no-repeat;
     background-size: 20px 20px;
-        text-align: left;
+    text-align: left;
 
 
 }
@@ -54,14 +54,15 @@
     text-align: justify;
 }
 
-.border.bl-tr.active{
-	animation: popUp 0.3s ease-in-out;
-		font-size: 110%;
+.border.bl-tr.active {
+    animation: popUp 0.3s ease-in-out;
+    font-size: 110%;
 }
-@keyframes popUp{
-	to{
-		font-size: 110%;
-	}
+
+@keyframes popUp {
+    to {
+        font-size: 110%;
+    }
 }
 
 
@@ -70,10 +71,9 @@
 h1,
 h2,
 h3,
-h5,
 h6 {
     font-family: cipher;
-    font-size:1.6em;
+    font-size: 1.6em;
 }
 
 h4 {
@@ -87,13 +87,12 @@ h4 {
 }
 
 .title_nav {
-    left:2px;
-    bottom:210px;
-    position:fixed;
+    left: 2px;
+    bottom: 210px;
+    position: fixed;
 }
 
-a
-{
+a {
     text-decoration: none;
     color: black;
 }
@@ -105,17 +104,17 @@ nav {
     background: #e6e6e6;
     padding-top: 20px;
     position: fixed;
-    left:55px;
+    left: 55px;
     z-index: 1;
 }
 
-.chevron{
-	position: absolute;
-	width: 25px;
-	height: 25px;
-	bottom:50px;
-	right: 50px;
-	z-index: 2;
+.chevron {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    bottom: 50px;
+    right: 50px;
+    z-index: 2;
 }
 
 .philosophy {
@@ -165,7 +164,7 @@ main {
 }
 
 nav > a {
- font-size: 1em;
+    font-size: 1em;
     width: 75px;
 }
 
@@ -195,13 +194,13 @@ body {
 .philosophy {
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
     background: #e6e6e6;
     grid-area: head;
 }
 
 .first_philosophy {
-    grid-area: 1 / 1;
+    order: 1;
     justify-self: center;
     align-self: center;
     padding-top: 2em;
@@ -209,33 +208,34 @@ body {
 }
 
 .second_philosophy {
-    display:flex;
+    order: 3;
+    display: flex;
     flex-direction: column;
-    grid-area: 2/1;
     justify-self: center;
     align-self: center;
     align-items: center;
 }
 
 .second_philosophy_text {
-    grid-area: 2/2;
+    order: 5;
     justify-self: center;
     align-self: center;
 }
 
-.third_philosophy{
-    grid-area: 3/2;
-        justify-self: center;
-    align-self: center;
-}
-
-.third_philosophy_text{
-    grid-area:3/1;
+.third_philosophy {
+    order: 6;
     justify-self: center;
     align-self: center;
 }
+
+.third_philosophy_text {
+    order: 6;
+    justify-self: center;
+    align-self: center;
+}
+
 .hover_img {
-    grid-area: 1 / 2;
+    order: 2;
     max-width: 100%;
 }
 
@@ -248,7 +248,7 @@ button {
     padding-left: 1.2em;
     padding-right: 1.2em;
     font-size: 1em;
-    border:none;
+    border: none;
     margin: 0.8em;
 }
 
@@ -338,7 +338,7 @@ button {
 }
 
 .laser_text {
-        max-width: 80%;
+    max-width: 80%;
     text-align: left;
     text-indent: 20px;
     display: flex;
@@ -360,23 +360,24 @@ button {
 }
 
 .project_holder_small {
-    height:600px;
+    height: 600px;
     display: grid;
-    padding:50px;
+    padding: 50px;
 }
 
 .project_holder_big {
-    height:600px;
+    height: 600px;
     display: grid;
-    padding:50px;
+    padding: 50px;
 }
+
 .project_box_1 {
-    justify-self:end;
+    justify-self: end;
     grid-area: 1/1;
 }
 
 .project_box_2 {
-    justify-self:left;
+    justify-self: left;
     grid-area: 1/1;
 }
 
@@ -389,6 +390,7 @@ button {
     grid-area: 1/2;
     justify-self: end;
 }
+
 .project_holder_big img {
     max-height: 450px;
     grid-area: 1/1;
@@ -407,11 +409,11 @@ button {
 }
 
 .project_img_2 {
-    transform:translateX(30px) translateY(-50px);
+    transform: translateX(30px) translateY(-50px);
 }
 
 .project_img_3 {
-    transform:translateX(-180px) translateY(10px);
+    transform: translateX(-180px) translateY(10px);
 }
 
 .project_img_1_small {
@@ -421,11 +423,11 @@ button {
 }
 
 .project_img_2_small {
-    transform:translateX(10px) translateY(-30px);
+    transform: translateX(10px) translateY(-30px);
 }
 
 .project_img_3_small {
-    transform:translateX(-100px) translateY(5px);
+    transform: translateX(-100px) translateY(5px);
 }
 
 /* ------------------------------------ END of Past projects ---------------------------------*/
@@ -464,54 +466,55 @@ button {
 
 /*ORDER*/
 
-.order{
+.order {
     display: flex;
     padding-top: 30px;
     padding-bottom: 30px;
 
 }
 
-.aside{
+.aside {
     width: 50px;
 }
 
-.orderwrapper{
+.orderwrapper {
     width: 50vw;
     height: 35vh;
     margin-left: 20%;
     margin-top: 5%;
 }
 
-#order-section0{
+#order-section0 {
     height: 45vh;
-    position:relative;
+    position: relative;
     background: #d0d0d0;
     padding: 10px;
 }
 
-#order-section0>h1{
+#order-section0 > h1 {
     margin-bottom: 30px;
     font-size: 30px;
 }
 
-#order-section0>h2{
+#order-section0 > h2 {
     font-size: 20px;
 }
 
-#order-section1{
+#order-section1 {
     display: none;
     height: 45vh;
-    position:relative;
+    position: relative;
     background: #d0d0d0;
     padding: 10px;
+    flex-flow: column;
 }
 
-#order-section1>h1{
+#order-section1 > h1 {
     margin-bottom: 50px;
     font-size: 40px;
 }
 
-#order-section1>h2{
+#order-section1 > h2 {
     margin-bottom: 50px;
     font-size: 25px;
 }
@@ -521,58 +524,58 @@ button {
     font-size: 0.7em;
 }
 
-#order-section2>h1{
+#order-section2 > h1 {
     margin-bottom: 50px;
     font-size: 40px;
 }
 
-#order-section2>h2{
+#order-section2 > h2 {
     margin-bottom: 30px;
     font-size: 25px;
 }
 
-#order-section2{
+#order-section2 {
     display: none;
     height: 45vh;
-    position:relative;
+    position: relative;
     background: #d0d0d0;
     padding: 10px;
 }
 
-#order-section3{
+#order-section3 {
     display: none;
     height: 45vh;
-    position:relative;
+    position: relative;
     background: #d0d0d0;
     padding: 10px;
 }
 
-#order-section3>h1{
+#order-section3 > h1 {
     margin-bottom: 50px;
     font-size: 40px;
 }
 
-#order-section3>h2{
+#order-section3 > h2 {
     font-size: 25px;
 }
 
-#order-section4{
+#order-section4 {
     display: none;
-    height:35vh;
+    height: 35vh;
     position: relative;
 }
 
-#order-section4{
+#order-section4 {
     background: #d0d0d0;
     padding: 10px;
 }
 
-#order-section4>h1{
+#order-section4 > h1 {
     margin-bottom: 50px;
     font-size: 40px;
 }
 
-.ordernav{
+.ordernav {
     height: 7rem;
     width: 1.5rem;
     margin: 10px;
@@ -582,20 +585,20 @@ button {
     border-color: #273440;
 }
 
-.orderlogo{
+.orderlogo {
     width: 50px;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
-.order-text-input{
+.order-text-input {
     background: transparent;
     border: none;
     border-bottom: 1px solid;
 }
 
-.order-text-input-big{
+.order-text-input-big {
     background: transparent;
     border: none;
     width: 60%;
@@ -603,7 +606,7 @@ button {
     border-bottom: 1px solid;
 }
 
-.radio-container input{
+.radio-container input {
     opacity: 0;
     position: absolute;
     width: 170px;
@@ -617,7 +620,7 @@ button {
 }
 
 .radio-container input:hover {
-    background:#DDD;
+    background: #DDD;
 }
 
 .label_name {
@@ -625,8 +628,8 @@ button {
 }
 
 .radio-container label {
-    padding:5px 70px;
-    cursor:pointer;
+    padding: 5px 70px;
+    cursor: pointer;
     -webkit-appearance: button;
     /* WebKit */
     -moz-appearance: button;
@@ -639,32 +642,33 @@ button {
     border-bottom: 1px solid;
     /* CSS3 */
 }
+
 .radio-container label:hover {
-    background:#DDD;
+    background: #DDD;
 }
 
 .order-button {
-	background-color:#273440;
-	border-radius:5px;
-	border:1px solid #273440;
-	display:block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:17px;
-	padding:10px 65px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #2f6627;
-    position:absolute;
+    background-color: #273440;
+    border-radius: 5px;
+    border: 1px solid #273440;
+    display: block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 17px;
+    padding: 10px 65px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #2f6627;
+    position: absolute;
     bottom: 10px;
     right: 10px;
 }
 
 .order-button:hover {
-	background-color:#295660;
+    background-color: #295660;
 }
 
-.order-types-div{
+.order-types-div {
     height: 100%;
     width: 100%;
     display: grid;
@@ -673,26 +677,26 @@ button {
 
 }
 
-.order-button-type{
-    background-color:#273440;
-	border-radius:5px;
-	border:1px solid #273440;
-	display:block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:17px;
-	padding:15px 65px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #2f6627;
+.order-button-type {
+    background-color: #273440;
+    border-radius: 5px;
+    border: 1px solid #273440;
+    display: block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 17px;
+    padding: 15px 65px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #2f6627;
     margin: 10px;
 }
 
 .order-button-type:hover {
-	background-color:#295660;
+    background-color: #295660;
 }
 
-.fname-lname-div{
+.fname-lname-div {
     padding-top: 20px;
 }
 
@@ -712,10 +716,10 @@ button {
 
 footer {
     grid-column-start: 1;
-    grid-column-end:4;
+    grid-column-end: 4;
     display: grid;
-    grid-template-columns: 1fr 1fr ;
-        background: #273440;
+    grid-template-columns: 1fr 1fr;
+    background: #273440;
     width: 100%;
     height: 200px;
     z-index: 5;
@@ -734,111 +738,125 @@ footer {
 /* ------------------------------------ New Modal --------------------------------*/
 
 
-.module_container{
-	display: none;
-    position:fixed;
-    top:0;
-    left:0;
-	z-index: 3;
-	height: 100vh;
-	width: 100vw;
-	padding: 5%;
-	background: rgba(7, 2, 13, 0.3);
+.module_container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    height: 100vh;
+    width: 100vw;
+    padding: 5%;
+    background: rgba(7, 2, 13, 0.3);
 
 }
-.module_container > div> div{
-	width: 100%;
-	height: 100%;
-	background: #E6E6E6;
-}
-.module_container > div{
-	width: 100%;
-	height: 100%;
+
+.module_container > div > div {
+    width: 100%;
+    height: 100%;
+    background: #E6E6E6;
 }
 
-.module_content{
-	display: grid;
-	grid-template-areas:
-		"module_b module_s1 module_s2"
-		"module_b module_m module_m";
-	grid-gap: 10px;
-	padding: 10px;
+.module_container > div {
+    width: 100%;
+    height: 100%;
 }
-.module_content img{
-	width: 100%;
-	/*max-height: 100%;*/
+
+.module_content {
+    display: grid;
+    grid-template-areas:
+        "module_b module_s1 module_s2"
+        "module_b module_m module_m";
+    grid-gap: 10px;
+    padding: 10px;
 }
-.module_b{
-	grid-area: module_b;
-	width: 100%;
-	height: 100%;
-	background: #111;
-	background: url(img/purse1.jpg) no-repeat;
-	background-size: cover;
-	background-position: center;
+
+.module_content img {
+    width: 100%;
+    /*max-height: 100%;*/
 }
-.module_m{
-	grid-area: module_m;
-	width: 100%;
-	height: 100%;
-	background: #222;
-	background: url(img/pattern.jpg) no-repeat;
-	background-size: cover;
-	background-position: center;
+
+.module_b {
+    grid-area: module_b;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    background: url(img/purse1.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
 }
-.module_s1{
-	grid-area: module_s1;
-	width: 100%;
-	height: 100%;
-	background: #113331;
-	background: url(img/sit.jpg) no-repeat;
-	background-size: cover;
-	background-position: center;
+
+.module_m {
+    grid-area: module_m;
+    width: 100%;
+    height: 100%;
+    background: #222;
+    background: url(img/pattern.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
 }
-.module_s2{
-	grid-area: module_s2;
-	width: 100%;
-	height: 100%;
-	background: #444;
-	background: url(img/purse2.jpg) no-repeat;
-	background-size: cover;
-	background-position: center;
+
+.module_s1 {
+    grid-area: module_s1;
+    width: 100%;
+    height: 100%;
+    background: #113331;
+    background: url(img/sit.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
 }
-.module_b:hover{
-	/*background: url(img/purse1.jpg) no-repeat;*/
-	/*animation: overlay_hover .3s ease-in-out;*/
+
+.module_s2 {
+    grid-area: module_s2;
+    width: 100%;
+    height: 100%;
+    background: #444;
+    background: url(img/purse2.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
 }
-.module_m:hover{
-	/*background: url(img/pattern.jpg) no-repeat;*/
-	/*animation: overlay_hover .3s ease-in-out;*/
+
+.module_b:hover {
+    /*background: url(img/purse1.jpg) no-repeat;*/
+    /*animation: overlay_hover .3s ease-in-out;*/
 }
-.module_s1:hover{
-	/*background: url(img/sit.jpg) no-repeat;*/
-	/*animation: overlay_hover .3s ease-in-out;*/
+
+.module_m:hover {
+    /*background: url(img/pattern.jpg) no-repeat;*/
+    /*animation: overlay_hover .3s ease-in-out;*/
 }
-.module_s2:hover{
-	/*background: url(img/purse2.jpg) no-repeat;*/
-	/*animation: overlay_hover .3s ease-in-out;*/
+
+.module_s1:hover {
+    /*background: url(img/sit.jpg) no-repeat;*/
+    /*animation: overlay_hover .3s ease-in-out;*/
 }
-.overlay{
-	height: 100%;
-	width: 100%;
-	opacity: 0;
-	user-select: none;
-	background: rgba(187, 153, 136, .8);
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	flex-direction: column;
-	color: #E6E6E6;
+
+.module_s2:hover {
+    /*background: url(img/purse2.jpg) no-repeat;*/
+    /*animation: overlay_hover .3s ease-in-out;*/
 }
-.overlay:hover{
-	opacity: 1;
-	user-select: all;
-	/*animation: overlay_hover .3s ease-in-out;*/
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    user-select: none;
+    background: rgba(187, 153, 136, .8);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    color: #E6E6E6;
 }
-.overlay p{
-	width: 80%;
+
+.overlay:hover {
+    opacity: 1;
+    user-select: all;
+    /*animation: overlay_hover .3s ease-in-out;*/
+}
+
+.overlay p {
+    width: 80%;
 }
 
 .appear {
@@ -852,29 +870,440 @@ footer {
 /* ------------------------------------ New footer --------------------------------*/
 
 
-footer{
-	grid-area: footer;
-	background: #273440;
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	right: 0;
+footer {
+    width: 100%;
+    display: grid;
+    grid-template-areas:
+        "SoMe info";
+    grid-template-columns: 1fr 1fr;
+
 }
 
-.SoMe{
-	grid-area: SoMe;
-	margin-left: 10em
-}
-.SoMe img{
-	height: 25px;
-	display: block;
-	margin: 50px 0px;
+.SoMe {
+    align-self: center;
+    grid-area: SoMe;
+    margin-left: 10em
 }
 
-.info{
-	grid-area: info;
-	display: flex;
-	flex-direction: column;
-	align-self: center;
-	margin-left: 10em;
+.SoMe img {
+    height: 25px;
+    display: block;
+    margin: 10px;
+    align-self: center;
+}
+
+.info {
+    grid-area: info;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    font-size: 0.8em;
+    color: white;
+    font-family: "expressway";
+}
+
+/* ------------------------------------ end of footer --------------------------------*/
+
+/* ------------------------------------ styling for mobile --------------------------------*/
+/* ------------------------------------ styling for mobile --------------------------------*/
+/* ------------------------------------ styling for mobile --------------------------------*/
+
+@media screen and (max-width: 1200px) {
+
+    .past_projects {
+        padding: 30px 0 0 80px;
+        width: 90vw;
+
+    }
+
+    .wrapper_pp {
+        display: flex;
+        flex-flow: column;
+    }
+
+    .project_holder_small {
+        height: 60vh;
+        display: grid;
+        padding: 50px;
+    }
+
+    .project_holder_big {
+        height: 60vh;
+        display: grid;
+        padding: 50px;
+    }
+
+    .project_holder_small img {
+        max-height: 40vh;
+        grid-area: 1/1;
+    }
+
+    .project_holder_big img {
+        max-height: 40vh;
+        grid-area: 1/1;
+    }
+
+    .project_img_1 {
+        z-index: 3;
+        transform: translateX(-20px) translateY(100px);
+
+    }
+
+    .project_img_2 {
+        transform: translateX(10px) translateY(-30px);
+    }
+
+    .project_img_3 {
+        transform: translateX(-100px) translateY(5px);
+    }
+
+    .module_content {
+        display: flex;
+        flex-flow: column;
+        overflow: scroll;
+    }
+
+
+    /* ------------------------------------ Styling for order mobile ------------------------------*/
+
+    #order {
+        padding: 30px 0 0 80px;
+
+    }
+
+    .order {
+        width: 70vw;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+
+    }
+
+    .aside {
+        transform: rotate(270deg);
+    }
+
+    .ordernav {
+        height: 2rem;
+        position: relative;
+    }
+
+    .orderwrapper {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    body {
+        display: grid;
+        grid-template-areas:
+            "nav head"
+            "nav main"
+            "footer footer";
+        grid-template-columns: 1em 80%;
+        background: #e6e6e6;
+    }
+
+    nav {
+        grid-area: nav;
+        background: #e6e6e6;
+        padding-top: 20px;
+        position: fixed;
+        left: 10px;
+        z-index: 1;
+    }
+
+    .title_nav {
+        left: -15px;
+        bottom: 10px;
+        position: fixed;
+    }
+
+    .philosophy {
+        width: 90vw;
+        display: block;
+        background: #e6e6e6;
+        grid-area: head;
+        padding: 30px 0 0 80px;
+    }
+
+    .excerpt {
+        max-width: none;
+        font-size: 0.8em;
+        font-weight: 500;
+        text-align: left;
+        text-indent: 20px;
+        display: flex;
+        /*justify-content: center;*/
+        padding: 10px 10px;
+        margin-top: 0px;
+    }
+
+    .hover_text {
+        max-width: none;
+        font-size: 0.8em;
+        font-weight: 500;
+        text-align: left;
+        text-indent: 20px;
+        display: flex;
+        /*justify-content: center;*/
+        padding: 10px 10px;
+        margin-top: 0px;
+    }
+
+
+    .static_text2 {
+        max-width: none;
+        font-size: 0.8em;
+        font-weight: 500;
+        text-align: left;
+        text-indent: 20px;
+        display: flex;
+        /*justify-content: center;*/
+        padding: 10px 10px;
+        margin-top: 0px;
+    }
+
+    .static_text1 {
+        max-width: none;
+        font-size: 0.8em;
+        font-weight: 500;
+        text-align: left;
+        text-indent: 20px;
+        display: flex;
+        /*justify-content: center;*/
+        padding: 10px 10px;
+        margin-top: 0px;
+    }
+
+    .static_img {
+        max-width: 100%;
+        display: flex;
+    }
+
+    .laser_title {
+        margin: 20px;
+    }
+
+    .laser_svg1 {
+        padding: 20px 0 20px 0;
+        display: flex;
+        max-width: 300px;
+        min-height: 0px;
+        /*does not work???*/
+    }
+
+    .laser_svg2 {
+        grid-area: laser_svg2;
+        width: 70%;
+        padding: 20px;
+    }
+
+    .laser_text {
+        max-width: none;
+        font-size: 0.8em;
+        font-weight: 500;
+        text-align: left;
+        text-indent: 20px;
+        display: flex;
+        /*justify-content: center;*/
+        padding: 10px 10px;
+        margin-top: 0px;
+    }
+
+    .chevron {
+        display: none;
+    }
+
+    h2 {
+        padding-top: 10px;
+        font-size: 1em;
+        text-align: center;
+    }
+
+    button {
+        font-size: 0.8em;
+    }
+
+    .project_holder_small img {
+        max-height: 30vh;
+        grid-area: 1/1;
+    }
+
+    .project_holder_big img {
+        max-height: 30vh;
+        grid-area: 1/1;
+    }
+
+    /* ------------------------------------ Styling for order mobile ------------------------------*/
+
+    .order {
+        width: 60vw;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+
+    }
+
+    .ordernav {
+        display: none;
+    }
+
+    .order-types-div {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-flow: column;
+    }
+
+    #order-section0 {
+        height: 100%;
+        position: relative;
+        background: #d0d0d0;
+        padding: 10px;
+    }
+
+    #order-section1 {
+        height: 100%;
+        position: relative;
+        background: #d0d0d0;
+        padding: 10px;
+    }
+
+    #order-section1 h1 {
+        font-size: 20px;
+    }
+
+    #order-section1 button {
+        position: relative;
+    }
+
+    #order-next1 {
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    #order-section1 label {
+        width: 100%;
+        padding: 0.3em;
+        padding-left: auto;
+        padding-right: auto;
+    }
+
+    #order-section1 p {
+        font-size: 0.4em;
+    }
+
+    #order-section2 {
+        height: 100%;
+        position: relative;
+        background: #d0d0d0;
+        padding: 10px;
+    }
+
+
+
+    .order-button-type {
+        font-size: 0.3em;
+        padding: 0.5em;
+    }
+
+    #order-section2 button {
+        position: relative;
+    }
+
+    #order-section2 h1 {
+        font-size: 20px;
+    }
+
+    #order-section2 h2 {
+        font-size: 20px;
+    }
+
+    #order-submit {
+        bottom: auto;
+        right: auto;
+        position: relative;
+    }
+
+    #order-section3 {
+        height: 100%;
+        position: relative;
+        background: #d0d0d0;
+        padding: 10px;
+        flex-flow: column;
+    }
+
+    #order-section3 h1 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    #order-section3 h2 {
+        font-size: 20px;
+    }
+
+    .order-text-input {
+        width: 100%;
+        height: 20px;
+    }
+
+        #order-section4 {
+        height: 100%;
+        position: relative;
+        background: #d0d0d0;
+        padding: 10px;
+        flex-flow: column;
+    }
+
+          #order-section4 h2{
+              font-size: 20px;
+    }
+
+        /* ------------------------------------ Styling for order mobile ------------------------------*/
+
+    .about_wrapper {
+        display: flex;
+        flex-flow: column;
+                padding: 30px 0 0 80px;
+        width: 90vw;
+        margin-bottom: 10px;
+    }
+
+    .portrait_sarah {
+        max-height: 40vh;
+    }
+
+    .about_us_p {
+                max-width: none;
+        font-size: 0.6em;
+        font-weight: 500;
+        text-align: left;
+        text-indent: 20px;
+        display: flex;
+        /*justify-content: center;*/
+        padding: 10px 10px;
+        margin-top: 0px;
+    }
+
+            /* ------------------------------------ Styling for order mobile ------------------------------*/
+
+    footer {
+        display:flex;
+        flex-flow: column;
+    }
+
+    .border.bl-tr.active {
+    animation: popUp 0.3s ease-in-out;
+    font-size: 100%;
+}
+
+@keyframes popUp {
+    to {
+        font-size: 100%;
+    }
+}
 }
