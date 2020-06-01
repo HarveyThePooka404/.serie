@@ -765,3 +765,114 @@ footer {
 }
 
 
+/* ------------------------------------ New Modal --------------------------------*/
+/* ------------------------------------ New Modal --------------------------------*/
+/* ------------------------------------ New Modal --------------------------------*/
+
+
+#module_container{
+	display: none;
+	position: fixed;
+	z-index: 3;
+	height: 100vh;
+	width: 100vw;
+	padding: 10%;
+	background: rgba(7, 2, 13, 0.3);
+
+}
+#module_container > div> div{
+	width: 100%;
+	height: 100%;
+	background: #E6E6E6;
+}
+#module_container > div{
+	width: 100%;
+	height: 100%;
+}
+
+.module_content{
+	display: grid;
+	grid-template-areas:
+		"module_b module_s1 module_s2"
+		"module_b module_m module_m";
+	grid-gap: 10px;
+	padding: 10px;
+}
+.module_content img{
+	width: 100%;
+	/*max-height: 100%;*/
+}
+.module_b{
+	grid-area: module_b;
+	width: 100%;
+	height: 100%;
+	background: #111;
+	background: url(img/purse1.jpg) no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.module_m{
+	grid-area: module_m;
+	width: 100%;
+	height: 100%;
+	background: #222;
+	background: url(img/pattern.jpg) no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.module_s1{
+	grid-area: module_s1;
+	width: 100%;
+	height: 100%;
+	background: #113331;
+	background: url(img/sit.jpg) no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.module_s2{
+	grid-area: module_s2;
+	width: 100%;
+	height: 100%;
+	background: #444;
+	background: url(img/purse2.jpg) no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.module_b:hover{
+	/*background: url(img/purse1.jpg) no-repeat;*/
+	/*animation: overlay_hover .3s ease-in-out;*/
+}
+.module_m:hover{
+	/*background: url(img/pattern.jpg) no-repeat;*/
+	/*animation: overlay_hover .3s ease-in-out;*/
+}
+.module_s1:hover{
+	/*background: url(img/sit.jpg) no-repeat;*/
+	/*animation: overlay_hover .3s ease-in-out;*/
+}
+.module_s2:hover{
+	/*background: url(img/purse2.jpg) no-repeat;*/
+	/*animation: overlay_hover .3s ease-in-out;*/
+}
+.overlay{
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	user-select: none;
+	background: rgba(187, 153, 136, .8);
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: column;
+	color: #E6E6E6;
+}
+.overlay:hover{
+	opacity: 1;
+	user-select: all;
+	/*animation: overlay_hover .3s ease-in-out;*/
+}
+.overlay p{
+	width: 80%;
+}
+
+/* ------------------------------------ end of New Modal --------------------------------*/
