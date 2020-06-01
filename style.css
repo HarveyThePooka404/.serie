@@ -846,3 +846,35 @@ footer {
 }
 
 /* ------------------------------------ end of New Modal --------------------------------*/
+
+/* ------------------------------------ New footer --------------------------------*/
+/* ------------------------------------ New footer --------------------------------*/
+/* ------------------------------------ New footer --------------------------------*/
+
+
+footer{
+	grid-area: footer;
+	background: #273440;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.SoMe{
+	grid-area: SoMe;
+	margin-left: 10em
+}
+.SoMe img{
+	height: 25px;
+	display: block;
+	margin: 50px 0px;
+}
+
+.info{
+	grid-area: info;
+	display: flex;
+	flex-direction: column;
+	align-self: center;
+	margin-left: 10em;
+}
