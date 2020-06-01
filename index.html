@@ -4,17 +4,63 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="stylesheet" href="style.css">
-	<title>.Serié</title>
+	<script src="jquery-3.5.1.min.js"></script>
+	<title>.Série</title>
 </head>
 <body>
+	<div class="loader-wrap">
+		<img src="img/logo/logo_white.svg" alt="" class="loader">
+	</div>
+	<img src="img/icons/chevron.png" alt="chevron" class="chevron">
+
+	<div id="module_container">
+		
+	<div id="project_module">
+		<div class="module_content">
+			<div class="module_b">
+				<div class="overlay">
+					<h4>Title</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, esse?</p>
+				</div>
+				<!-- <img src="img/purse1.jpg" alt=""> -->
+			</div>
+			<div class="module_m">
+				<div class="overlay">
+					<h4>Title</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, fuga.</p>
+				</div>
+				<!-- <img src="img/pattern.jpg" alt=""> -->
+			</div>
+			<div class="module_s1">
+				<div class="overlay">
+					<h4>Title</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, dolore.</p>
+				</div>
+				<!-- <img src="img/sit.jpg" alt=""> -->
+			</div>
+			<div class="module_s2">
+				<div class="overlay">
+					<h4>Title</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, corporis.</p>
+				</div>
+				<!-- <img src="img/purse2.jpg" alt=""> -->
+			</div>
+		</div>
+	</div>
+
+	</div>
+	
+
+	<div class="show">
 	<!-- div.navigare -->
 	<nav class="center">
-		<img src="img/logo/logo_black.svg" alt="">
+		<a href="#home"><img src="img/logo/logo_black.svg" alt=""></a>
+		
 		<!-- <h1>Logo</h1> -->
 		<div class="timeline center">
-			<h4 class="border bl-tr">Past Projects</h4>
-			<h4 class="border bl-tr">Order</h4>
-			<h4 class="border bl-tr">About us</h4>
+			<a href="#projects"><h4 class="menu_item_p">Past Projects</h4></a>
+			<a href="#order"><h4 class="menu_item_o ">Order</h4></a>
+			<a href="#about"><h4 class="menu_item_a ">About us</h4></a>
 		</div>
 	</nav>
 
@@ -23,120 +69,224 @@
 
 
 	<div class="header">
-		<h1 class="header_title">.Serié</h1>
+		<h1 class="header_title" id="home">.Série</h1>
 		<!-- <button>Work with us</button> -->
-		<h2 class="header_subtitle">What is Serié?</h2>
-		<p class="hover_text center border bl-tr">
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem et doloribus aut provident, harum dolore quibusdam aliquam, eveniet nemo dolores odio alias, rem, labore esse consectetur velit tempore ut voluptatum.
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem et doloribus aut provident, harum dolore quibusdam aliquam, eveniet nemo dolores odio alias, rem, labore esse consectetur velit tempore ut voluptatum.
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem et doloribus aut provident, harum dolore quibusdam aliquam, eveniet nemo dolores odio alias, rem, labore esse consectetur velit tempore ut voluptatum.
-		</p>
+		<h2 class="header_subtitle">What is Série?</h2>
+		<div class="hover_text" >
+			<p class="center border bl-tr">
+				.Série is a craftsman project meant as service. A more sustainable approach to leather crafting and accessories. <br>
+				.Série is a service, where you can be a part of a design process. Specializing in the design process. You can learn more about the materials and how to take care of the object in the long run. Ine of our biggest goals is to reduce the waste of marerial and allowing people to think differently about objects and the materials they're made with.
+			</p>
+			<h2 class="center">Do you have an idea?</h2>
+			<a href="#order" class="center"><button><h3>Let's make something</h3></button></a>
+		</div>
+		
 		<img src="img/bag_nobg.png" alt="bag" class="hover_img">
 		<div class="header_grid">
 			<p class="static_text1 center border bl-tr">
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam praesentium culpa amet numquam odio aspernatur consequatur ipsum rerum! Id odit sit aspernatur, quia harum quasi. Ullam eum, laudantium omnis recusandae.
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam praesentium culpa amet numquam odio aspernatur consequatur ipsum rerum! Id odit sit aspernatur, quia harum quasi. Ullam eum, laudantium omnis recusandae.
+				We are questioning the current fashion system. Do we really want to continue to collect and create waste? <br>
+				We want you to be a part of a design process. We want to show you contemoirary crafting methods, which are more efficient and therefore more affordable and sustainable. You can help us reduce overproduction. We don't have any premade collections and therefore no deadstock. Every piece will be made custom to you and your needs. This way we can ensure a piece you'll love for a lifetime
 			</p>
-			<p class="static_text2 center border bl-tr">
+			<!-- <p class="static_text2 center border bl-tr">
+				Delete??? <br>
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati vitae numquam facilis, officia cumque corporis error enim. Ipsa quam accusamus esse dolore, sunt mollitia impedit optio repudiandae quis. Soluta, incidunt.
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati vitae numquam facilis, officia cumque corporis error enim. Ipsa quam accusamus esse dolore, sunt mollitia impedit optio repudiandae quis. Soluta, incidunt.
-			</p>
-			<img src="img/skirt_nobg.png" alt="skirt" class="static_img">
+			</p> -->
+			<img src="img/sit2_nobg.png" alt="skirt" class="static_img">
 		</div>
 		<div class="lasercut">
 			<h2 class="laser_title">Laser cutting</h2>
 			<img src="img/t1.svg" alt="laser cut bag" class="laser_svg1">
 			<img src="img/t2.svg" alt="laser cut bag 2" class="laser_svg2">
-			<p class="laser_text center border bl-tr">
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa asperiores autem, aliquid aliquam eius natus vel quisquam mollitia corporis voluptatibus voluptates earum animi odit vitae nostrum quam. Aut numquam, molestiae.
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa asperiores autem, aliquid aliquam eius natus vel quisquam mollitia corporis voluptatibus voluptates earum animi odit vitae nostrum quam. Aut numquam, molestiae.
+			<p class="laser_text border bl-tr">
+				.Série is a simplified craftmanship service. We believe that sharing design knowledge can help people understand how more sustainable products can be made. for a better future of fashion and design. <br>
+				.Série anchors itself in a fab lab (fabrication laboratory) where prototyping is easy with the help of laser cutting machines <br>
+				Cutting leather by hand is a long process that requires many years of practice to perfect it. Which can make it difficult to acces and share. Industrial methods, such as making molds from metal, can be very expensive and are only used for big productions. That makes it a non viable for personalized products.
 			</p>
 		</div>
 	</div>
 	<main>
 		<section id="projects">
-			<h2>Past projects</h2><!-- vertical -->
-			
-			<!-- 
-			<div class="s1_project">
-				<div class="project_container">
-					<img src="img/apron1.jpg" alt="">
-					<img src="img/chest1.jpg" alt="">
-					<img src="img/chest2.jpg" alt="">
-					<p>description</p>
-				</div>
-			</div>
-			<div class="s2_project">
-				<div class="project_container">
-					<img src="img/apron1.jpg" alt="">
-					<img src="img/chest1.jpg" alt="">
-					<img src="img/chest2.jpg" alt="">
-					<p>description</p>
-				</div>
-			</div>
-			<div class="m_project">
-				<div class="project_container">
-					<img src="img/apron1.jpg" alt="">
-					<img src="img/chest1.jpg" alt="">
-					<img src="img/chest2.jpg" alt="">
-					<p>description</p>
-				</div>
-			</div>
-			<div class="b_project">
-				<div class="project_container">
-					<img src="img/apron1.jpg" alt="">
-					<img src="img/chest1.jpg" alt="">
-					<img src="img/chest2.jpg" alt="">
-					<p>description</p>
-				</div>
-			</div> -->
+			<h2 class="section_title project_act">PastProjects</h2>
 			<div class="project_grid">
-				<div class="s1_project">
-					
+				<div class="s1_project project_item">
+					<a href="javascript:showProjectModule()">
+						<div>
+							<img src="img/apron1.jpg" alt="">
+							<img src="img/apron1.jpg" alt="">
+							<img src="img/chest1.jpg" alt="">
+							<img src="img/chest2.jpg" alt="">
+							<p>description</p>
+						</div>
+					</a>
 				</div>
-				<div class="s2_project">
-					
+				<div class="s2_project project_item">
+					<a href="javascript:showProjectModule()">
+						<div>
+							<img src="img/apron1.jpg" alt="">
+							<img src="img/apron1.jpg" alt="">
+							<img src="img/chest1.jpg" alt="">
+							<img src="img/chest2.jpg" alt="">
+							<p>description</p>
+						</div>
+					</a>
 				</div>
-				<div class="m_project">
-					
+				<!-- <div class="m_project project_item">
+					<img src="img/apron1.jpg" alt="">
+					<img src="img/apron1.jpg" alt="">
+					<img src="img/chest1.jpg" alt="">
+					<img src="img/chest2.jpg" alt="">
+					<p>description</p>
+				</div> -->
+				<div class="b_project project_item">
+					<a href="javascript:showProjectModule()">
+						<div>
+							<img src="img/apron1.jpg" alt="">
+							<img src="img/apron1.jpg" alt="">
+							<img src="img/chest1.jpg" alt="">
+							<img src="img/chest2.jpg" alt="">
+							<p>description</p>
+						</div>
+					</a>
 				</div>
-				<div class="b_project">
-					
-				</div>
+			</div>
+			<div class="more">
+				<button>View more</button>
 			</div>
 		</section>
+		
 		<section id="order">
-			<h2>Order</h2>
-			<div class="border lb-tr">
+			<h2 class="section_title order_act">Create with .Série</h2>
+			<div class="border bl-tr" id="step1">
 				<div>
-					<div class="aside">
-						logo
-						progres bar
+					<div class="progress_bar center">
+						<img src="img/logo/logo_blue.svg" alt="">
+						<div>
+							<div class="center progress progress1 active"></div>
+							<div class="center progress progress2"></div>
+							<div class="center progress progress3"></div>
+							<div class="center progress progress4"></div>
+						</div>
 					</div>
 					<div class="form">
-						<h3>How can we help</h3>
-						<h4>Choose a type</h4>
+						<h3>Bring your design to life!</h3>
+						<h4>Tell us more about yourself.</h4>
 						<div class="flex_div">
-							<button>asd</button>
-							<button>dsa</button>
-							<button>fgs</button>
-							<button>hgj</button>
+							<button>I'm looking for a personal item of a gift</button>
+							<button>I'm looking for someone to collaborate with</button>
+							<button>I need a personalized item/accessory for my staff</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="border bl-tr" id="step2">
+				<div>
+					<div class="progress_bar center">
+						<img src="img/logo/logo_blue.svg" alt="">
+						<div>
+							<div class="center progress progress1 active"></div>
+							<div class="center progress progress2 active"></div>
+							<div class="center progress progress3"></div>
+							<div class="center progress progress4"></div>
+						</div>
+					</div>
+					<div class="form">
+						<h3>Tell us some more</h3>
+						<h4>What are you looking for?</h4>
+
+
+						<input class="radio" type="radio" name="involved" value="yes">
+	                    <label for="yes">One item</label>
+	                    <input class="radio" type="radio" name="involved" value="no">
+	                    <label for="no">Multiple items</label>
+
+						<div class="flex_div">
+							<button>I'm looking for a personal item of a gift</button>
+							<button>I'm looking for someone to collaborate with</button>
+							<button>I need a personalized item/accessory for my staff</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="border bl-tr" id="step3">
+				<div>
+					<div class="progress_bar center">
+						<img src="img/logo/logo_blue.svg" alt="">
+						<div>
+							<div class="center progress progress1 active"></div>
+							<div class="center progress progress2 active"></div>
+							<div class="center progress progress3 active"></div>
+							<div class="center progress progress4"></div>
+						</div>
+					</div>
+					<div class="form">
+						<h3>Some last details....</h3>
+						<h4>Tell us more about you need</h4>
+						<div class="flex_div">
+							<button>I'm looking for a personal item of a gift</button>
+							<button>I'm looking for someone to collaborate with</button>
+							<button>I need a personalized item/accessory for my staff</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="border bl-tr" id="step4">
+				<div>
+					<div class="progress_bar center">
+						<img src="img/logo/logo_blue.svg" alt="">
+						<div>
+							<div class="center progress progress1 active"></div>
+							<div class="center progress progress2 active"></div>
+							<div class="center progress progress3 active"></div>
+							<div class="center progress progress4 active"></div>
+						</div>
+					</div>
+					<div class="form">
+						<h3>Let us contact you</h3>
+						<h4>Please give us some contact information</h4>
+						<div class="flex_div">
+							<button>I'm looking for a personal item of a gift</button>
+							<button>I'm looking for someone to collaborate with</button>
+							<button>I need a personalized item/accessory for my staff</button>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
+
 		<section id="about">
-			<h2>About Us</h2>
-			
+			<h2 class="section_title about_act">About Us</h2>
+			<div class="about_img">
+				<img src="img/chest2.jpg" alt="">
+			</div>
+			<!-- <div class="about_text">	
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam iustoquae ipsum quasi. Q uae asperiores tempora cum quaerat ipsam voluptatum aliquid optio, ad culpa, distinctio consequatur. Harum eius, unde repellat?
+				</p>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. A voluptate dolores aperiam optio vero maiores vel beatae odio dignissimos alias dolor itaque quod nihil tempore perferendis nam sint, eius fugiat.
+				</p>
+			</div> -->
+			<p class="about_text border bl-tr">I am a French leather designer based in Copenhagen for 2 years now. <br> Educated as a fashion designer, I choose to specialized myself in accessory and leather  craftsmanship</p>
+			<p class="about_text2 border bl-tr">My previous employment include studio assistant at Jérôme  Dreyfuss (Paris) and leather designer in the R&D of Ecco's Tannery in the Netherlands <br>
+			As a designer, I wish to specialise in a sustainable leather design and create a more collaborative approach to design and craft by involving the customers in all process.
+			</p>
 		</section>
 	</main>
 	<footer>
-		<h1>Footer</h1>
-		<h1>Footer</h1>
-		<h1>Footer</h1>
-		<h1>Footer</h1>
-		<h1>Footer</h1>
+		<div class="SoMe">
+			<img src="img/icons/fb.png" alt="facebook">
+			<img src="img/icons/insta.png" alt="insta">
+		</div>
+		<div class="info">
+			<h5>Sarah Martet</h5>
+			<h5>Business Owner</h5>
+			<h5>Phone number: 123 456 78</h5>
+			<h5>Email: example@gmail.com</h5>
+		</div>
 	</footer>
+	</div>
+	<script src="script.js"></script>
 </body>
 </html>
+
