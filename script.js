@@ -32,7 +32,7 @@ function isScrolledIntoView(elem) {
 }
 
 function allInView() {
-    if (isScrolledIntoView($("#home"))){
+    if (isScrolledIntoView($("#philosophy"))){
     	$(".menu_item_p").removeClass("border");
     	$(".menu_item_p").removeClass("bl-tr");
     	$(".menu_item_o").removeClass("border");
@@ -41,7 +41,7 @@ function allInView() {
     	$(".menu_item_a").removeClass("bl-tr");
     }
 
-    if (isScrolledIntoView($("#pp"))){
+    if (isScrolledIntoView($("#past_projects"))){
     	$(".menu_item_o").removeClass("border");
     	$(".menu_item_o").removeClass("bl-tr");
     	$(".menu_item_a").removeClass("border");
