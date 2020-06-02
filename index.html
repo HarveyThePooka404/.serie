@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="style.css">
     	<script src="jquery-3.5.1.min.js"></script>
+    	<script src="fetch.js"></script>
     <title>.Série</title>
 </head>
 
 <body>
+
     <!-- div.navigare -->
     <nav class="center">
         <a href="#philosophy">
@@ -29,6 +31,8 @@
                     </div>
         </div>
     </nav>
+
+
 	<img src="img/icons/chevron.png" alt="chevron" class="chevron">
 
     <!-- ADD CHEVRON!!!! -->
@@ -93,28 +97,27 @@
         <!-- Starting Past Projects --------------------------------------------------------------------------->
 
         <section id="pp" class="past_projects">
-            <h2 class="laser_title" id="past_projects">Past Projects</h2>
-            <div class="wrapper_pp">
-                    <div class="project_holder_small project_box_1">
-                        <img src="img/apron1.jpg" alt="" class="project_img_1_small">
-                        <img src="img/apron2.jpg" alt="" class="project_img_2_small">
-                        <img src="img/bag.jpg" alt="" class="project_img_3_small">
-                    </div>
-                <div class="project_holder_small project_box_2">
-                    <img src="img/apron1.jpg" alt="" class="project_img_1_small">
-                    <img src="img/apron2.jpg" alt="" class="project_img_2_small">
-                    <img src="img/bag.jpg" alt="" class="project_img_3_small">
-                </div>
-                <div class="project_holder_small project_box_3">
-                    <img src="img/apron1.jpg" alt="" class="project_img_1_small">
-                    <img src="img/apron2.jpg" alt="" class="project_img_2_small">
-                    <img src="img/bag.jpg" alt="" class="project_img_3_small">
-                </div>
+
+
+        <template class="small_project_template">
+            <div class="project_holder_small">
+                <img src="" alt="" class="project_img_1_small">
+                <img src="" alt="" class="project_img_2_small">
+                <img src="" alt="" class="project_img_3_small">
+            </div>
+        </template>
+
+                <template class="big_project_template">
                 <div class="project_holder_big project_box_4">
                     <img src="img/apron1.jpg" alt="" class="project_img_1">
                     <img src="img/apron2.jpg" alt="" class="project_img_2">
                     <img src="img/bag.jpg" alt="" class="project_img_3">
                 </div>
+        </template>
+
+            <h2 class="laser_title" id="past_projects">Past Projects</h2>
+            <div class="wrapper_pp">
+
 
             </div>
 
@@ -272,25 +275,6 @@ As a designer, I wish to specialise in sustainable leather design and create a m
 	</footer>
 </body>
 
-<script>
-    const project_holder = document.querySelectorAll(".project_holder_small");
-    const modal = document.querySelector(".module_container");
-    const project_holder_big = document.querySelector(".project_holder_big");
-
-    project_holder.forEach((elem) => elem.addEventListener("click", dropDown, false));
-    project_holder_big.addEventListener("click", dropDown, false);
-    modal.addEventListener("click", Disappear, false);
-
-        function dropDown() {
-            console.log("Javascript is working");
-
-            modal.classList.toggle("appear");
-        }
-
-    function Disappear() {
-        modal.classList.toggle("appear");
-    }
-</script>
     <script src="order.js"></script>
     <script src="script.js"></script>
 

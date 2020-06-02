@@ -398,6 +398,7 @@ button {
 
 .project_holder_small img {
     max-height: 175px;
+    max-width: 175px;
     grid-area: 1/1;
 }
 
@@ -410,6 +411,7 @@ button {
 
 .project_img_2 {
     transform: translateX(30px) translateY(-50px);
+    background-color: white;
 }
 
 .project_img_3 {
