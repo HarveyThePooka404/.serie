@@ -72,10 +72,23 @@ function doSomething(f) {
     function fillModal (jsonData){
     const modal = document.querySelector(".module_container");
     const moduleb = document.querySelector(".module_b");
+    const modulem = document.querySelector(".module_m");
+    const modules1 = document.querySelector(".module_s1");
+    const modules2 = document.querySelector(".module_s2");
 
 
     moduleb.style.background = "url(" +`${jsonData.photo_1.guid}` + ")";
-    console.log(jsonData.photo_1.guid);
+    moduleb.style.backgroundSize = "cover";
+
+    modulem.style.background = "url(" +`${jsonData.photo_2.guid}` + ")";
+    modulem.style.backgroundSize = "cover";
+
+    modules1.style.background = "url(" +`${jsonData.photo_3.guid}` + ")";
+    modules1.style.backgroundSize = "cover";
+
+    modules2.style.background = "url(" +`${jsonData.photo_4.guid}` + ")";
+    modules2.style.backgroundSize = "cover";
+
     modal.addEventListener("click", Disappear, false);
     modal.classList.toggle("appear");
     }
