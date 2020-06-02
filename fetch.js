@@ -41,7 +41,9 @@ function rehandleData(bigPP) {
 function createBigProject(bpp) {
     const template_big = document.querySelector(".big_project_template").content;
     const copy_big = template_big.cloneNode(true);
+    const holder_big = copy_big.querySelector(".project_holder_big");
 
+    holder_big.setAttribute("id", bpp.id);
     copy_big.querySelector(".project_img_1").src = bpp.photo_1.guid;
     copy_big.querySelector(".project_img_2").src = bpp.photo_2.guid;
     copy_big.querySelector(".project_img_3").src = bpp.photo_3.guid;
@@ -51,6 +53,10 @@ function createBigProject(bpp) {
 }
 
 setTimeout(function () {
+
+    const big_box = document.querySelector(".project_holder_big");
+    big_box.addEventListener("click", doSomethingtoo, false);
+
     const pp = document.querySelectorAll(".project_holder_small");
 
     pp.forEach(function (e) {
@@ -66,31 +72,31 @@ function doSomething(f) {
     var endpoint = ".photo_1.guid";
 
     fetch(`${urlString + currentId}`)
-    .then(res => res.json())
-    .then(fillModal)
+        .then(res => res.json())
+        .then(fillModal)
 
-    function fillModal (jsonData){
-    const modal = document.querySelector(".module_container");
-    const moduleb = document.querySelector(".module_b");
-    const modulem = document.querySelector(".module_m");
-    const modules1 = document.querySelector(".module_s1");
-    const modules2 = document.querySelector(".module_s2");
+    function fillModal(jsonData) {
+        const modal = document.querySelector(".module_container");
+        const moduleb = document.querySelector(".module_b");
+        const modulem = document.querySelector(".module_m");
+        const modules1 = document.querySelector(".module_s1");
+        const modules2 = document.querySelector(".module_s2");
 
 
-    moduleb.style.background = "url(" +`${jsonData.photo_1.guid}` + ")";
-    moduleb.style.backgroundSize = "cover";
+        moduleb.style.background = "url(" + `${jsonData.photo_1.guid}` + ")";
+        moduleb.style.backgroundSize = "cover";
 
-    modulem.style.background = "url(" +`${jsonData.photo_2.guid}` + ")";
-    modulem.style.backgroundSize = "cover";
+        modulem.style.background = "url(" + `${jsonData.photo_2.guid}` + ")";
+        modulem.style.backgroundSize = "cover";
 
-    modules1.style.background = "url(" +`${jsonData.photo_3.guid}` + ")";
-    modules1.style.backgroundSize = "cover";
+        modules1.style.background = "url(" + `${jsonData.photo_3.guid}` + ")";
+        modules1.style.backgroundSize = "cover";
 
-    modules2.style.background = "url(" +`${jsonData.photo_4.guid}` + ")";
-    modules2.style.backgroundSize = "cover";
+        modules2.style.background = "url(" + `${jsonData.photo_4.guid}` + ")";
+        modules2.style.backgroundSize = "cover";
 
-    modal.addEventListener("click", Disappear, false);
-    modal.classList.toggle("appear");
+        modal.addEventListener("click", Disappear, false);
+        modal.classList.toggle("appear");
     }
 
 }
@@ -98,4 +104,40 @@ function doSomething(f) {
 function Disappear() {
     const modal = document.querySelector(".module_container");
     modal.classList.toggle("appear");
+}
+
+function doSomethingtoo(f) {
+
+    var currentId = f.currentTarget.getAttribute("id");
+    var urlString = "http://valender.dk/t9/wp-json/wp/v2/past-project-big/";
+    var endpoint = ".photo_1.guid";
+
+    fetch(`${urlString + currentId}`)
+        .then(res => res.json())
+        .then(fillModal)
+
+    function fillModal(jsonData) {
+        const modal = document.querySelector(".module_container");
+        const moduleb = document.querySelector(".module_b");
+        const modulem = document.querySelector(".module_m");
+        const modules1 = document.querySelector(".module_s1");
+        const modules2 = document.querySelector(".module_s2");
+
+
+        moduleb.style.background = "url(" + `${jsonData.photo_1.guid}` + ")";
+        moduleb.style.backgroundSize = "cover";
+
+        modulem.style.background = "url(" + `${jsonData.photo_2.guid}` + ")";
+        modulem.style.backgroundSize = "cover";
+
+        modules1.style.background = "url(" + `${jsonData.photo_3.guid}` + ")";
+        modules1.style.backgroundSize = "cover";
+
+        modules2.style.background = "url(" + `${jsonData.photo_4.guid}` + ")";
+        modules2.style.backgroundSize = "cover";
+
+        modal.addEventListener("click", Disappear, false);
+        modal.classList.toggle("appear");
+    }
+
 }
