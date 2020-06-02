@@ -62,14 +62,23 @@ setTimeout(function () {
 function doSomething(f) {
 
     var currentId = f.currentTarget.getAttribute("id");
-    var urlString = "url(http://valender.dk/t9/wp-json/wp/v2/past-project?id=";
-    var endpoint = ".photo_1.guid)";
+    var urlString = "http://valender.dk/t9/wp-json/wp/v2/past-project/";
+    var endpoint = ".photo_1.guid";
 
+    fetch(`${urlString + currentId}`)
+    .then(res => res.json())
+    .then(fillModal)
+
+    function fillModal (jsonData){
     const modal = document.querySelector(".module_container");
+    const moduleb = document.querySelector(".module_b");
 
-    console.log(currentId + urlString + endpoint);
+
+    moduleb.style.background = "url(" +`${jsonData.photo_1.guid}` + ")";
+    console.log(jsonData.photo_1.guid);
     modal.addEventListener("click", Disappear, false);
     modal.classList.toggle("appear");
+    }
 
 }
 
