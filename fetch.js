@@ -62,7 +62,7 @@ setTimeout(function () {
     pp.forEach(function (e) {
         e.addEventListener("click", doSomething, false);
     })
-}, 1000);
+}, 2000);
 
 
 function doSomething(f) {
@@ -82,6 +82,17 @@ function doSomething(f) {
         const modules1 = document.querySelector(".module_s1");
         const modules2 = document.querySelector(".module_s2");
 
+        const module_b_title = document.querySelector("#module_b_title");
+        const module_b_p = document.querySelector("#module_b_p");
+
+        const module_m_title = document.querySelector("#module_m_title");
+        const module_m_p = document.querySelector("#module_m_p");
+
+        const module_s1_title = document.querySelector("#module_s1_title");
+        const module_s1_p = document.querySelector("#module_s1_p");
+
+        const module_s2_title = document.querySelector("#module_s2_title");
+        const module_s2_p = document.querySelector("#module_s2_p");
 
         moduleb.style.background = "url(" + `${jsonData.photo_1.guid}` + ")";
         moduleb.style.backgroundSize = "cover";
@@ -95,8 +106,23 @@ function doSomething(f) {
         modules2.style.background = "url(" + `${jsonData.photo_4.guid}` + ")";
         modules2.style.backgroundSize = "cover";
 
+        module_b_title.innerHTML = jsonData.title.rendered;
+        module_b_p.innerHTML = jsonData.content.rendered;
+
+        module_m_title.innerHTML = jsonData.title.rendered;
+        module_m_p.innerHTML = jsonData.content.rendered;
+
+        module_s1_title.innerHTML = jsonData.title.rendered;
+        module_s1_p.innerHTML = jsonData.content.rendered;
+
+        module_s2_title.innerHTML = jsonData.title.rendered;
+        module_s2_p.innerHTML = jsonData.content.rendered;
+
+        console.log(moduleb.firstChild.firstChild);
         modal.addEventListener("click", Disappear, false);
         modal.classList.toggle("appear");
+
+
     }
 
 }

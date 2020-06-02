@@ -858,6 +858,7 @@ footer {
 }
 
 .overlay p {
+    font-size: 0.8em;
     width: 80%;
 }
 
