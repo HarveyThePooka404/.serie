@@ -550,6 +550,7 @@ button {
     position: relative;
     background: #d0d0d0;
     padding: 10px;
+    flex-flow: column;
 }
 
 #order-section3 > h1 {
@@ -598,6 +599,7 @@ button {
     background: transparent;
     border: none;
     border-bottom: 1px solid;
+        width: 50%;
 }
 
 .order-text-input-big {
